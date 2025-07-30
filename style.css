@@ -1,0 +1,147 @@
+body {
+
+
+    /* Set the font for the whole page. 'Cinzel' is the epic font, with 'serif' as a backup */
+    font-family: 'Cinzel', serif;
+
+    /* Full-screen settings */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* The Background Image - NEW VOLCANIC THEME */
+    /* Image from Unsplash by David J. Boozer */
+    background-image: url('https://images.unsplash.com/photo-1598379502251-72212057b545?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-color: #111; /* Fallback color if the image fails to load */
+
+    /* Helps make the text more readable over the background */
+    text-align: center;
+    color: #fff;
+
+    cursor: url('path/to/your/flame-animation.gif'), auto;
+}
+
+/* --- Container for our text --- */
+.contents {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black box for readability */
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 107, 0, 0.4);
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.5);
+}
+
+  @keyframes burn {
+    from { text-shadow: -.1em 0 .3em #eb780c, .1em -.1em .3em #b35b09, -.2em -.2em .4em #d6450b, .2em -.3em .3em #ec760c, -.2em -.4em .4em #cd4606, .1em -.5em .7em #973716, .1em -.7em .7em #451b0e; }
+    45%  { text-shadow: .1em -.2em .5em #eb780c, .15em 0 .4em #b35b09, -.1em -.25em .5em #d6450b, .15em -.45em .5em #ec760c, -.1em -.5em .6em #cd4606, 0 -.8em .6em #973716, .2em -1em .8em #451b0e; }
+    70%  { text-shadow: -.1em 0 .3em #eb780c, .1em -.1em .3em #b35b09, -.2em -.2em .6em #d6450b, .2em -.3em .4em #ec760c, -.2em -.4em .7em #cd4606, .1em -.5em .7em #973716, .1em -.7em .9em #451b0e; }
+    to   { text-shadow: -.1em -.2em .6em #eb780c, -.15em 0 .6em #b35b09, .1em -.25em .6em #d6450b, -.15em -.45em .5em #ec760c, .1em -.5em .6em #cd4606, 0 -.8em .6em #973716, -.2em -1em .8em #451b0e; }
+  }
+
+/* --- The Main Title (H1) --- */
+h1 {
+    /* The main orange color */
+    color: #ff6600;
+
+    /* A glowing effect using text-shadow */
+    text-shadow: 
+        0 0 5px #ff4500,
+        0 0 10px #ff4500,
+        0 0 20px #ff8c00;
+
+    /* Font styling */
+    font-size: 4rem; /* 4rem is about 64px, depending on browser settings */
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0; /* Remove default margins */
+}
+
+/* --- The Subtitle Paragraph (p) --- */
+p {
+    font-size: 1.5rem;
+    color: #ddd;
+    text-shadow: 0 0 5px #000;
+    margin-top: 10px;
+}
+
+/* --- Responsive Design for smaller screens (like mobile) --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Make title smaller on mobile */
+    }
+    p {
+        font-size: 1.2rem; /* Make subtitle smaller on mobile */
+    }
+    .content {
+        padding: 25px;
+        margin: 15px; /* Add some margin on the sides */
+    }
+
+}
+    
+    .card::after, .card::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100;
+        background-image: conic-gradient(rgba(255, 107, 0, 0.4), rgba(255, 69, 0, 0.5));
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: 1;
+        padding: 4px;
+        border-radius: 7px;
+    }
+
+    .card::before {
+        filter: blur(1.5rem);
+        opacity: .5;
+    }
+
+    /*  border: 6.7px double rgba(255, 107, 0, 0.4);
+        box-shadow: 0 0 25px rgba(255, 69, 0, 0.5); */
+
+    #troll {
+        size: 100000px;
+    }
+
+    #content {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black box for readability */
+        padding: 40px;
+        border-radius: 15px;
+        border: 1px solid rgba(151, 2, 2, 0.418);
+        box-shadow: 0 0 25px rgba(65, 20, 3, 0.363);
+    }
+
+    #info {
+        color: black; /* Background for div */
+    }
+
+    .inftext {
+        color: black;
+    }
+
+    .itis {
+        font-size: large;
+    }
+
+    .inf2 {
+        color: black; 
+        font-size: 75px;
+    }
+
+    .infingrn {
+        color: black; 
+        font-size: 25px;
+    }
+
+    .infingrnog {
+        color: black;
+        font-size: 50px;
+    }
+
+    hr.breaks {
+        border: 2.1px dotted #d6450b;
+    }
